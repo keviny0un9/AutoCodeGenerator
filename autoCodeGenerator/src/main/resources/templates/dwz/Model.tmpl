@@ -1,0 +1,38 @@
+package templates.dwz;
+
+/**
+ * @author: ${author}
+ * @version: 1.0
+ * @since ${date}
+ */
+ 
+public class ${className} {
+	
+   	#foreach($prop in $columnMetas)
+   		// "$prop.comments"
+		private ${prop.dataType} ${prop.javaName};
+	
+	#end
+	public $className(){
+	}
+	
+	#foreach($prop in $columnMetas)
+	   public ${prop.dataType} ${prop.getterMethod}(){
+   			return this.${prop.javaName};
+   		}
+   		
+   		public void ${prop.setterMethod} (${prop.dataType} ${prop.javaName}){
+   			this.${prop.javaName} = ${prop.javaName};
+   		}
+	#end
+	
+	@Override
+	public String toString(){
+		return "[" + ${className} + "]" + "{"
+		#foreach($prop in $columnMetas)
+			+ "${prop.javaName}:" + ${prop.javaName} + "," 
+		#end
+		+"}";
+	}
+	
+}
