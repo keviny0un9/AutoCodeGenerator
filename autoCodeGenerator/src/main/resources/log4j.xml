@@ -21,15 +21,12 @@
 		</layout>
 	</appender>
 
-	<category name="org.myframework" additivity="false">
+	<category name="com.kevin" additivity="false">
 		<priority value="DEBUG" />
 		<appender-ref ref="console" />
 	</category>
 
-	<!-- <category name="org.myframework.jdbc.MyJdbcTemplate" additivity="false"> 
-		<priority value="error" /> <appender-ref ref="console" /> </category> <category 
-		name="org.myframework.sqlconfig.impl.JavaSqlTemplate" additivity="false"> 
-		<priority value="error" /> <appender-ref ref="console" /> </category> -->
+
 	<category name="com.sunshine" additivity="false">
 		<priority value="DEBUG" />
 		<appender-ref ref="console" />

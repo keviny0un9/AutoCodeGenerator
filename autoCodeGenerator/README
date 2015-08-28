@@ -1,0 +1,6 @@
+代码生成器
+
+src/main/resources/templates 代码生成模板目录，
+src/main/resources/basic.properties 配置代码生成目录，需要生成代码的表, 生成的文件所在的目录 和作用模板目录
+src/main/resources/jdbc.properties 数据库连接的信息
+src/main/resources/templates.cfg   配置文件：使用哪些代码模板
